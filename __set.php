@@ -37,5 +37,9 @@ class Bar {
 }
 
 $test = new Bar();
+$test2 = new Bar();
 $test->age = 20; // 调用 __set 方法，但是没有设置成功
+$test2->age = 30;
 var_dump($test);//object(Bar)#2 (0) { }
+echo '<br>';
+var_dump($test2);//object(Bar)#3 (0) { }
